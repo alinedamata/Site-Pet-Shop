@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <title>Pet Store</title>
+    <script src="script/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-content">
+            <div class="esquerda">
+                <h3>Pet Store</h3>
+            </div>
+
+            <div class="direita">   
+                <p>Serviços</p>
+                <p>Sobre</p>
+                <p>Contato</p>
+                
+                <div class="checkbox-content">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                      <div class="ball"></div>
+                    </label>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- descrição -->
+    <section class="main">
+        <div class="main-content">
+
+            <div class="img">
+                <img src="assets/home-folder.png" alt="" srcset="">
+            </div>
+
+            <div class="main-texts">
+                <p>Lorem Ipsum is simply dummy text of 
+                    the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's 
+                    standard  dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of 
+                    type and scrambled it to make a 
+                    type specimen book. It has survived not 
+                    only five centuries</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- quem nos atendemos -->
+    <section class="publico">
+        <div class="publico-content" id="publico">
+
+            <div class="title">
+                <h3>Quem nós atendemos</h3>
+            </div>
+
+            <div class="cards">
+
+                <div class="card" id="card-1">
+                    <img src="https://conteudo.imguol.com.br/c/entretenimento/54/2020/04/28/cachorro-pug-1588098472110_v2_1x1.jpg" alt="">
+                </div>
+
+                <div class="card" id="card-2">
+                    <img src="https://images.ecycle.com.br/wp-content/uploads/2022/03/24150416/pexels-roman-odintsov-6332557-2048x1365.jpg.webp" alt="">
+                </div>
+
+                <div class="card" id="card-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0SacUn_LgQ6W_2u7KM8ypLiN5FAWKGh30gw&usqp=CAU" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- sobre nos -->
+    <section class="sobre">
+        <div class="sobre-content">
+
+            <div class="sobre-img">
+                <img src="assets/aboutus.jpg" alt="">
+            </div>
+
+            <div class="sobre-texts">
+                <h3>Sobre nós</h3>
+                <p>Lorem Ipsum is simply dummy text of 
+                    the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's 
+                    standard  dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of 
+                    type and scrambled it to make a 
+                    type specimen book. It has survived not 
+                    only five centuries</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+            <div class="news-content">
+                    <div class="news-div">
+                        <p>Cadastre-se e fique sabendo das ofertas antes de todos! </p>
+                    </div>
+
+                    <div class="news-div">
+                        <input type="email" placeholder="seu@email.com" id="name" required>
+                    </div>
+
+                    <div class="news-div">
+                        <select name="" id="">
+                            <optgroup>
+                                <option value="" disabled>Qual seu pet?</option>
+                                <option value="">Cachorro</option>
+                                <option value="">Gato</option>
+                                <option value="">Vaca</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="news-div">
+                        <button onclick="sendData()">Cadastrar</button>
+                    </div>
+            </div>
+    </section>
+
+    <!-- servicos oferecidos-->
+    <section class="servicos" id="servicos">
+        <div class="servicos-content">
+
+            <div class="servicos-text">
+                <h3 id="servicos-text">Serviços que nós oferecemos</h3>
+            </div>
+
+            <div class="servicos-cards">
+
+                <div class="box" id="box-1">
+                    <img src="https://www.petlove.com.br/static/uploads/banner_image/image/27949/PlanoDeSaude.png" alt="">
+                    <h4>Plano de Saúde</h4>
+                    <p>Já pensou em dar um plano de saúde para o seu pet?</p>
+                    <button>Contratar</button>
+                </div>
+
+                <div class="box" id="box-2">
+                    <img src="https://www.petlove.com.br/static/uploads/banner_image/image/27868/Hospedagem.png" alt="">
+                    <h4>Hospedagem</h4>
+                    <p>O hotel que seu cãozinho merece: um lar como o seu.</p>
+                    <button>Contratar</button>
+                </div>
+
+                <div class="box" id="box-3">
+                    <img src="https://www.petlove.com.br/static/uploads/banner_image/image/27867/creche.png" alt="">
+                    <h4>Creche</h4>
+                    <p>Não deixe seu cão sozinho em casa enquanto trabalha!  </p>
+                    <button>Contratar</button>
+                </div>
+
+                <div class="box" id="box-4">
+                    <img src="https://www.petlove.com.br/static/uploads/banner_image/image/27870/petSitter.png" alt="">
+                    <h4>Pet Sitter</h4>
+                    <p>Um herói vai até a sua casa para cuidar do seu pet.</p>
+                    <button>Contratar</button>
+                </div>
+
+                <div class="box" id="box-5">
+                    <img src="https://www.petlove.com.br/static/uploads/banner_image/image/27869/passeador.png" alt="">
+                    <h4>Passeador</h4>
+                    <p>Passeios de 30 ou 60 min para seu pet gastar energia.</p>
+                    <button>Contratar</button>
+                </div>
+
+                <div class="box" id="box-6">
+                    <img src="https://www.petlove.com.br/static/uploads/banner_image/image/27871/Veterinaria.png" alt="">
+                    <h4>Veterinário</h4>
+                    <p>Receba, em casa, o cuidado que seu pet merece!</p>
+                    <button>Contratar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-texts">
+                <div class="contatos">
+                    <h4>Contatos</h4>
+                    <p>321313213</p>
+                    <p>321313213</p>
+                    <p>321313213</p>
+                    <p>321313213</p>
+                </div>
+                <div class="localizacao">
+                    <h4>Localização</h4>
+                    <p>321313213</p>
+                    <p>321313213</p>
+                    <p>321313213</p>
+                    <p>321313213</p>
+                </div>
+                <div class="redes">
+                    <h4>Redes socias</h4>
+                    <p>321313213</p>
+                    <p>321313213</p>
+                    <p>321313213</p>
+                    <p>321313213</p>
+                </div>
+            </div>
+
+            <div class="footer-dev">
+                <p>Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+</html>
